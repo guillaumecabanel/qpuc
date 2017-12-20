@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Questions Pour Un Champion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <section class="hero">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+
+            </h1>
+          </div>
+        </div>
+      </section>
+
+      <div class="columns">
+        <div class="column">
+          <div class="box">
+            <h2 class="title is-3">Générique</h2>
+            <audio class="sound" src="sounds/generique.mp3" controls></audio>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <h3 class="title is-3">Musique pour les questions</h3>
+            <audio id="loop-music" class="sound" src="sounds/musique-question.mp3"></audio>
+            <a id="play-loop" class="button is-fullwidth is-outlined is-dark is-large">
+              <span class="icon is-large">
+                <i class="fa fa-play"></i>
+              </span>
+            </a>
+            <a id="pause-loop" class="button is-fullwidth is-outlined is-info is-large hidden">
+              <span class="icon is-large">
+                <i class="fa fa-pause"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+
+
+        <div class="columns">
+          <div class="column">
+            <a class="button is-fullwidth is-info is-large play">
+              <audio class="sound" src="sounds/buzz.mp3"></audio>
+              <span class="icon is-large">
+                <i class="fa fa-volume-up"></i>
+              </span>
+              <span>BUZZ</span>
+            </a>
+          </div>
+
+          <div class="column">
+            <a class="button is-fullwidth is-danger is-large play">
+              <audio class="sound" src="sounds/perdu.mp3"></audio>
+              <span class="icon is-large">
+                <i class="fa fa-times-circle-o"></i>
+              </span>
+              <span>Râté !</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column">
+            <a class="button is-fullwidth is-success is-large play">
+              <audio class="sound" src="sounds/ding-applause.mp3"></audio>
+              <span class="icon is-large">
+                <i class="fa fa-certificate"></i>
+              </span>
+              <span>Applaudissements</span>
+            </a>
+          </div>
+
+          <div class="column">
+            <a class="button is-fullwidth is-warning is-large play">
+              <audio class="sound" src="sounds/dingdong.mp3"></audio>
+              <span class="icon is-large">
+                <i class="fa fa-bell"></i>
+              </span>
+              <span>Fin du temps</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
